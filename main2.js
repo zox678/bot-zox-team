@@ -24,7 +24,7 @@ const booru = require('booru');
 db.defaults({ histoires: [], xp: []}).write()
 var bot = new Discord.Client();
 var prefix = ("r!");
-
+var token = process.env.TOKEN
 var cpu = os.loadavg();
 var randnum = 0
 var botenabled = true;
@@ -35,7 +35,7 @@ bot.on('ready', () => {
     console.log('Bot Ready !');
 });
 
-bot.login("NTc2MTc2MjI0ODI5OTY0Mjg4.XNSr8w.QKPfgcma7Sf5-JuZ3BFtprfEyy8")
+bot.login(token)
 
 
 bot.on("guildMemberAdd", member => {
