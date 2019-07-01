@@ -31,7 +31,7 @@ var botenabled = true;
 var storynumber = db.get('histoires').map('story_value').value();
 var dispatcher;
 bot.on('ready', () => {
-  bot.user.setActivity("dev par la team zox [r!help]", {type: "WATCHING"});
+  bot.user.setActivity("dev par le serv R3L shop [r!help]", {type: "WATCHING"});
     console.log('Bot Ready !');
 });
 
