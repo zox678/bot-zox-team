@@ -23,7 +23,7 @@ const booru = require('booru');
 
 db.defaults({ histoires: [], xp: []}).write()
 var bot = new Discord.Client();
-var prefix = ("r!");
+var prefix = ("R3L!");
 var token = process.env.TOKEN
 var cpu = os.loadavg();
 var randnum = 0
@@ -31,7 +31,7 @@ var botenabled = true;
 var storynumber = db.get('histoires').map('story_value').value();
 var dispatcher;
 bot.on('ready', () => {
-  bot.user.setActivity("dev par le serv R3L shop [r!help]", {type: "WATCHING"});
+  bot.user.setActivity("dev par le serv R3L shop [R3L!help]", {type: "WATCHING"});
     console.log('Bot Ready !');
 });
 
